@@ -1,1 +1,38 @@
-sfadfgwdfgwv
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section style="background: linear-gradient(to right, #3b82f6, #6366f1); color: white; padding: 80px 20px; text-align: center;">
+    <div style="max-width: 900px; margin: 0 auto;">
+        <h1 style="font-size: 3rem; font-weight: bold; margin-bottom: 20px;">🔬 Welcome to the Science Club</h1>
+        <p style="font-size: 1.25rem; margin-bottom: 30px;">Where curiosity meets creativity. Join us in exploring the wonders of science and innovation.</p>
+        <a href="{{ url_for('research') }}"
+           style="background: white; color: #4f46e5; padding: 12px 24px; font-weight: bold; text-decoration: none; border-radius: 25px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            🚀 Check Out Our Latest Project
+        </a>
+    </div>
+</section>
+
+<!-- Club Highlights -->
+<section style="background: white; padding: 80px 20px; text-align: center;">
+    <div style="max-width: 800px; margin: 0 auto;">
+        <h2 style="font-size: 2.5rem; font-weight: bold; color: #111827; margin-bottom: 20px;">Who We Are</h2>
+        <p style="font-size: 1.1rem; color: #4b5563; line-height: 1.6;">
+            We are a passionate group of students dedicated to exploring science through hands-on projects, deep research, and collaboration.
+            From robotics to environmental studies, our work spans multiple fields of innovation and curiosity.
+        </p>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section style="background-color: #eef2ff; padding: 60px 20px; text-align: center;">
+    <div style="max-width: 700px; margin: 0 auto;">
+        <h3 style="font-size: 2rem; font-weight: bold; color: #1f2937; margin-bottom: 15px;">Want to join our next experiment?</h3>
+        <p style="font-size: 1.1rem; color: #4b5563; margin-bottom: 25px;">Come to our next meeting or contact us for more info.</p>
+        <a href="{{ url_for('contact') }}"
+           style="background: #6366f1; color: white; padding: 12px 24px; font-weight: bold; text-decoration: none; border-radius: 25px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            ✉️ Contact Us
+        </a>
+    </div>
+</section>
+{% endblock %}
